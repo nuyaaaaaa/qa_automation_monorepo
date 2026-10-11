@@ -6,7 +6,7 @@ test('тестові дані для перевірки логіну', async () 
 console.log (testEmails);
 testEmails.push('another@example.com');
 console.log (testEmails);
-let checksPassed = 0; //значення змінеться
+let checksPassed = 0; // let, бо значення лічильника буде змінюватися під час тесту
 });
 
 
@@ -64,8 +64,6 @@ test('перебір email через continue і break', async () => {
         console.log(`Поточний час (do...while): ${timeDoWhile} хв`);
         timeDoWhile -= 10; 
     } while (timeDoWhile >= 30);  
+    
+    // Результати while і do...while розійдуться, якщо стартове значення вже менше 30
  });
-
-      
-
-  
