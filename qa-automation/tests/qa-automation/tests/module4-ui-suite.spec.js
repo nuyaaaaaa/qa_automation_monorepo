@@ -15,7 +15,7 @@ test.describe('Вхід у Tasteorama', () => {
     await submitButton.click();
 
     await expect(page).toHaveURL('/');
-    await expect(page).toHaveURL('/');
+    
   });
   test('неправильний пароль показує помилку і залишає на сторінці входу', async ({ page }) => {
   const emailField = page.locator('#email');
@@ -53,7 +53,7 @@ test.describe('Список рецептів', () => {
   await expect(previousPage).toBeDisabled();
   await nextPage.click();
   await expect(previousPage).toBeEnabled();
-});
+});cd
 });
 
 
