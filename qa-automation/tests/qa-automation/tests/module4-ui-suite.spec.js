@@ -53,7 +53,7 @@ test.describe('Список рецептів', () => {
   await expect(previousPage).toBeDisabled();
   await nextPage.click();
   await expect(previousPage).toBeEnabled();
-});cd
+});
 });
 
 
